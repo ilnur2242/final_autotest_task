@@ -20,3 +20,11 @@ class BasePage():
 		return True
 
 	
+	def is_current_url(self):
+		current_url = self.browser.current_url
+		if 'login' in current_url:
+			return True
+		else:
+			return False
+
+	
